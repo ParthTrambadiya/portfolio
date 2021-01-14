@@ -1,0 +1,116 @@
+/*--read-more-popup--*/
+.popup-box
+{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top:0;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 500;
+	visibility: hidden;
+	opacity:0;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+    
+    &.open
+    {
+        visibility: visible;
+	    opacity:1;
+    }
+
+    .popup-content
+    {
+        background-color:  #ffffff;
+        width: 600px;
+        position: absolute;
+        left: 50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+        border-radius: 10px;
+    }
+
+    .popup-header
+    {
+        padding: 15px 40px 15px 15px;
+        background-color: $c-primary;
+        box-shadow: 0 14px 26px -12px rgba(236, 77, 55, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(236, 77, 55, 0.2);
+
+        h3
+        {
+            margin:0;
+            color: #1c1e1f;
+            font-size: 20px;
+        }
+
+        .popup-close-icon
+        {
+            position: absolute;
+            height: 30px;
+            width: 30px;
+            text-align: center;
+            color: #ffffff;
+            font-size: 28px;
+            line-height: 30px;
+            right: 5px;
+            top: 5px;
+            cursor: pointer;
+        }
+    }
+
+    .popup-body
+    {
+        padding: 15px;
+        max-height: 300px;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar
+        {
+            width: 7px;
+            background-color: $c-white;
+        }
+
+        &::-webkit-scrollbar-thumb
+        {
+            background-color: #3c3f3c;
+            border-radius: 20px;
+        }
+
+        p
+        {
+            font-size: 16px;
+            color:#555555;
+            margin:0 0 15px;
+        }
+
+        img
+        {
+            width: 100%;
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    }
+
+    .popup-footer
+    {
+        padding: 10px;
+        background-color: $c-primary;
+        text-align: right;
+        box-shadow: 0 -14px 26px -12px rgba(236, 77, 55, 0.42), 0 -4px 23px 0px rgba(0, 0, 0, 0.12), 0 -8px 10px -5px rgba(236, 77, 55, 0.2);
+
+        .btn{
+            padding: 5px 10px;
+            color: #1c1e1f;
+            font-size: 16px;
+            background-color: #ffffff;
+            cursor: pointer;
+            border-radius: 4px;
+
+            &:focus
+            {
+                outline: none;
+            }
+        }
+    }
+}

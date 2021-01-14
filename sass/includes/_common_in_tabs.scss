@@ -1,0 +1,31 @@
+/*--Common In Tabs--*/
+.content
+{
+    .title
+    {
+        margin: 0 0 0 0;
+        line-height: 42px;
+        padding: 0 0 30px 0;
+        font-size: 40px;
+        font-weight: 900;
+        z-index: 2;
+    }
+}
+
+.text-box
+{
+    .subtitle
+    {
+        font-size: 25px;
+        margin: 0 0 0 0;
+        line-height: 27px;
+        padding: 0 0 20px 0;
+        font-weight: 700;
+        z-index: 2;
+
+        i
+        {
+            color: $c-primary;
+        }
+    }
+}
