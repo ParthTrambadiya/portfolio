@@ -596,7 +596,7 @@ body .btn-hover:hover {
 }
 .popup-box .popup-header h3 {
   margin: 0;
-  color: #1c1e1f;
+  color: #ffffff;
   font-size: 20px;
 }
 .popup-box .popup-header .popup-close-icon {
@@ -643,7 +643,7 @@ body .btn-hover:hover {
 }
 .popup-box .popup-footer .btn {
   padding: 5px 10px;
-  color: #1c1e1f;
+  color: #e94b3cff;
   font-size: 16px;
   background-color: #ffffff;
   cursor: pointer;
