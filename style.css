@@ -204,7 +204,7 @@ body .btn-hover:hover {
 }
 .left-list .link-section {
   position: relative;
-  top: -50px;
+  top: -30px;
 }
 .left-list .link-section .nav-pills .nav-link {
   border-radius: 0;
@@ -302,6 +302,55 @@ body .btn-hover:hover {
   transition: 0.4s;
 }
 .person .person_social_links li i:hover {
+  border-radius: 50%;
+  background-color: #e94b3cff;
+  color: #fff;
+}
+
+/*--Person-Photo-in-Mobile-View--*/
+.photo .person_name {
+  font-size: 8vw;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  line-height: 1.17;
+  text-transform: uppercase;
+}
+.photo img {
+  box-shadow: 0 0 10px #e94b3cff;
+}
+.photo .person_position {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e94b3cff;
+  text-align: center;
+  margin-top: 20px;
+  line-height: normal;
+}
+.photo .person_social_links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  list-style: none;
+  margin: 15px 0 20px;
+}
+.photo .person_social_links li {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.photo .person_social_links li:not(:last-child) {
+  margin-right: 10px;
+}
+.photo .person_social_links li i {
+  font-size: 20px;
+  color: white;
+  transition: 0.4s;
+}
+.photo .person_social_links li i:hover {
   border-radius: 50%;
   background-color: #e94b3cff;
   color: #fff;

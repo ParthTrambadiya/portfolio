@@ -1,0 +1,65 @@
+/*--Person-Photo-in-Mobile-View--*/
+.photo
+{
+    .person_name
+    {
+        font-size: 8vw;
+        font-weight: 900;
+        color: white;
+        text-align: center;
+        line-height: 1.17;
+        text-transform: uppercase;
+    }
+
+    img
+    {
+        box-shadow: 0 0 10px $c-primary;
+    }
+
+    .person_position
+    {
+        font-size: 18px;
+        font-weight: bold;
+        color: $c-primary;
+        text-align: center;
+        margin-top: 20px;
+        line-height: normal;
+    }
+    .person_social_links
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        list-style: none;
+        margin: 15px 0 20px;
+
+        li
+        {
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:not(:last-child)
+            {
+                margin-right: 10px;
+            }
+
+            i
+            {
+                font-size: 20px;
+                color: white;
+                transition: 0.4s;
+
+                &:hover
+                {
+                    border-radius: 50%;
+                    background-color: $c-primary;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

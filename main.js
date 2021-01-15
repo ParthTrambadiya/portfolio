@@ -13,6 +13,15 @@ $(document).ready(function() {
         download: false,
         share: false
     });
+
+    $(window).resize(function() {
+        if($(window).width() > 767) {
+            $('#v-pills-photo-tab').addClass('d-none')
+        }
+        else {
+            $('#v-pills-photo-tab').removeClass('d-none')
+        }
+    });
 });
 
 project_item.addEventListener('click', function(e){
