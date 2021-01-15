@@ -30,7 +30,7 @@ body::before {
 body::after {
   position: fixed;
   left: -100px;
-  bottom: 0;
+  bottom: -30px;
   content: "";
   width: 400px;
   height: 400px;
