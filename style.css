@@ -29,7 +29,6 @@ body::before {
 }
 body::after {
   position: fixed;
-  top: 500px;
   left: -100px;
   bottom: 0;
   content: "";
