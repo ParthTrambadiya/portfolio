@@ -419,73 +419,52 @@ body .btn-hover:hover {
 }
 
 /*--Skills--*/
-.skills .text-box:hover .skill {
-  opacity: 0.05;
-}
-.skills .text-box .skill {
+.skills .text-box .list {
   position: relative;
-  display: flex;
-  margin: 20px 0;
-  padding: 13px 10px 10px;
-  background: linear-gradient(#1c1e1f 0%, #333 10%, #222);
-  border-radius: 8px;
-  overflow: hidden;
-  border: 2px solid #e94b3cff;
-  transition: 0.5s;
-  z-index: 11;
 }
-.skills .text-box .skill::before {
+.skills .text-box .list h5 {
+  position: relative;
+  color: #ffffff;
+  font-weight: 500;
+}
+.skills .text-box .list ul {
+  position: relative;
+}
+.skills .text-box .list ul li {
+  position: relative;
+  left: 0;
+  color: #999;
+  list-style: none;
+  margin: 2px 0;
+  border-left: 2px solid #e94b3cff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.skills .text-box .list ul li:hover {
+  left: 10px;
+}
+.skills .text-box .list ul li:hover::before {
+  transform: scaleX(1);
+}
+.skills .text-box .list ul li:hover span {
+  color: #111;
+}
+.skills .text-box .list ul li::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  z-index: 10;
-}
-.skills .text-box .skill .name {
-  position: relative;
-  width: 70px;
-  text-align: right;
-  color: white;
-  font-size: 12px;
-  margin-top: -1px;
-  text-transform: uppercase;
-}
-.skills .text-box .skill .value {
-  position: relative;
-  width: 20px;
-  text-align: left;
-  color: white;
-  margin-top: -2px;
-  font-size: 12px;
-  text-transform: uppercase;
-}
-.skills .text-box .skill .percent {
-  position: relative;
-  width: 100%;
-  height: 15px;
-  margin: 0 10px;
-  border-radius: 10px;
-  background: #151515;
-  box-shadow: inset 0 0 10px #000;
-  overflow: hidden;
-}
-.skills .text-box .skill .percent .progress {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 70%;
   height: 100%;
-  border-radius: 10px;
   background: #e94b3cff;
-  box-shadow: inset 0 0 2px #000;
-  animation: animate 4s ease-in-out forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.5s;
 }
-.skills .text-box .skill:hover {
-  opacity: 1;
-  transform: scale(1.03);
+.skills .text-box .list ul li span {
+  position: relative;
+  padding: 4px;
+  display: inline-block;
+  z-index: 1;
+  transition: 0.5s;
 }
 
 @keyframes animate {
