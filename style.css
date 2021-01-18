@@ -29,8 +29,9 @@ body::before {
 }
 body::after {
   position: fixed;
+  top: 500px;
   left: -100px;
-  bottom: -30px;
+  bottom: 0;
   content: "";
   width: 400px;
   height: 400px;
@@ -816,6 +817,11 @@ body .btn-hover:hover {
 @media screen and (max-width: 768px) {
   .left-list {
     border-right: 1px solid #707070;
+  }
+}
+@media screen and (min-width: 767px) {
+  #v-pills-photo-tab {
+    display: none;
   }
 }
 @media (max-width: 767px) {
