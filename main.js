@@ -47,3 +47,8 @@ popup.addEventListener("click", function(event){
 function popupBox(){
     popup.classList.toggle("open");
 }
+
+window.addEventListener("load", function(){
+    const loader = document.querySelector(".preloader");
+    loader.className += " hidden";
+});
